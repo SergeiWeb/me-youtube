@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>YouTube - Popular Videos</title>
-	<!-- Normalize CSS -->
-	<link rel="stylesheet" href="./css/normalize.css">
-	<!-- Style CSS -->
-	<link rel="stylesheet" href="./css/main.css">
-	<!-- Script JS -->
-	<script src="./js/main.js"></script>
-</head>
-<body>
-
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YouTube - Popular Videos</title>
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- Script JS -->
+		<script defer src="./js/main.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<div class="navbar-actions">
+					<button class="navbar-burger">
+						<svg class="icon">
+							<use xlink:href="./svg/icons.svg#menu"></use>
+						</svg>
+					</button>
+					<a href="#" class="navbar-logo">
+						<img src="./svg/logo.svg" alt="Logo: YouTube" />
+					</a>
+					<div class="navbar-search search">
+						<input
+							class="search-input"
+							type="search"
+							id=""
+							placeholder="Search"
+						/>
+						<button class="search-btn">
+							<svg class="icon">
+								<use xlink:href="./svg/icons.svg#search"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="navbar-tools tools">
+					<button class="tools-btn video" title="Create video">
+						<svg class="icon">
+							<use xlink:href="./svg/icons.svg#video"></use>
+						</svg>
+					</button>
+					<button class="tools-btn grid" title="Open settings">
+						<svg class="icon">
+							<use xlink:href="./svg/icons.svg#grid"></use>
+						</svg>
+					</button>
+					<button class="tools-btn bell" title="New message">
+						<span class="bell-message">3</span>
+						<svg class="icon">
+							<use xlink:href="./svg/icons.svg#bell"></use>
+						</svg>
+					</button>
+					<button class="tools-user">
+						<img
+							src="./img/user.jpg"
+							alt="User image"
+							class="image-avatar tools-image"
+						/>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<!-- /.header -->
+	</body>
 </html>
