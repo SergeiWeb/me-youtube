@@ -79,6 +79,9 @@ body {
 	width: 100%;
 	margin: auto;
 	padding: 20px 40px;
+	@media (max-width: 630px) {
+		padding: 12px 16px;
+	}
 }
 
 .navbar {
@@ -87,6 +90,9 @@ body {
 	justify-content: space-between;
 	@media (max-width: 920px) {
 		column-gap: 25px;
+	}
+	@media (max-width: 380px) {
+		column-gap: 0;
 	}
 	&-burger {
 		width: 20px;
@@ -101,6 +107,9 @@ body {
 		transition: box-shadow var(--transition);
 		@media (max-width: 740px) {
 			display: none;
+		}
+		@media (max-width: 380px) {
+			column-gap: 5px;
 		}
 		.icon {
 			fill: var(--burger-menu-color);
@@ -134,7 +143,15 @@ body {
 		align-items: center;
 		@media (max-width: 920px) {
 			&:not(.navbar-tools) {
-				flex-basis: 100%;
+				flex-basis: 70%;
+				column-gap: 20px;
+				justify-content: space-between;
+			}
+		}
+		@media (max-width: 380px) {
+			&:not(.navbar-tools) {
+				flex-basis: auto;
+				column-gap: 10px;
 			}
 		}
 	}
@@ -150,14 +167,16 @@ body {
 		padding: 12px 20px;
 		background: var(--search-input-color-opacity-3);
 		border-radius: 22px;
-		@media (max-width: 740px) {
+		@media (max-width: 630px) {
+			padding: 0;
 			background: none;
+			flex: initial;
 		}
 		&-input {
 			all: unset;
 			flex: 1 1 auto;
 			color: var(--search-text-color);
-			@media (max-width: 680px) {
+			@media (max-width: 630px) {
 				display: none;
 			}
 			&::placeholder {
@@ -175,6 +194,14 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@media (max-width: 630px) {
+				padding: 10px;
+				transition: box-shadow var(--transition);
+				border-radius: 50%;
+				&:hover {
+					box-shadow: 0 0 0 3px var(--box-shadow-opacity-8);
+				}
+			}
 			& .icon {
 				fill: var(--secondary-color);
 				transition: transform var(--transition), opacity var(--transition);
@@ -192,6 +219,9 @@ body {
 		justify-content: flex-end;
 		@media (max-width: 920px) {
 			flex-basis: auto;
+		}
+		@media (max-width: 380px) {
+			column-gap: 15px;
 		}
 	}
 	& .tools {
