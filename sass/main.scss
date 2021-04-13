@@ -148,7 +148,7 @@ body {
 				justify-content: space-between;
 			}
 		}
-		@media (max-width: 425px)  {
+		@media (max-width: 320px)  {
 			&:not(.navbar-tools) {
 				flex-basis: auto;
 				column-gap: 10px;

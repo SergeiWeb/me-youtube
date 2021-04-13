@@ -203,7 +203,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .navbar-actions:not(.navbar-tools), .navbar-tools:not(.navbar-tools) {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
